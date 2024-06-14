@@ -8,6 +8,10 @@ cmsenv
 cd Generate_reReco
 sh test_cmsDriver_miniaod.sh
 ```
+To produce files contain HLT information
+```
+hlt_cmsDriver_miniaod.sh # Combine with test_cmsDriver_miniaod.sh once test is done
+```
 After testing it locally, you can submit it to crab
 ```
 cmsRun CrabSubmit.py
