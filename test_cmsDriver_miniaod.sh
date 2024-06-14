@@ -39,6 +39,9 @@ process.MINIAODSIMoutput.outputCommands.append('keep recoTracks_generalTracks_*_
 process.MINIAODSIMoutput.outputCommands.append('keep recoTracks_trackExtenderWithMTD_*_*') \n\
 process.MINIAODSIMoutput.outputCommands.append('keep *_tofPID_*_*') \n\
 process.MINIAODSIMoutput.outputCommands.append('keep *_mtdTrackQualityMVA_*_*') \n\
+process.MINIAODSIMoutput.outputCommands.append('keep ticlTracksters_*_*_*') \n\
+process.MINIAODSIMoutput.outputCommands.append('keep *_ticlTrackstersMerge_*_*') \n\
+process.MINIAODSIMoutput.outputCommands.append('keep *_hgcalLayerClusters_*_*') \n\
 "
 
 # cmsDriver command
@@ -67,7 +70,7 @@ cmsDriver.py  \
 --nStreams \
     3 \
 --filein \
-    "/TTToSemileptonic_TuneCP5_14TeV-powheg-pythia8/Phase2Spring23DIGIRECOMiniAOD-PU200_Trk1GeV_131X_mcRun4_realistic_v5-v1/GEN-SIM-DIGI-RAW-MINIAOD" \
+    "root://cms-xrd-global.cern.ch//store/mc/Phase2Spring23DIGIRECOMiniAOD/TT_TuneCP5_14TeV-powheg-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_L1TFix_Trk1GeV_131X_mcRun4_realistic_v9-v1/50000/005bc30b-cf79-4b3b-9ec1-a80e13072afd.root" \
 --era \
     Phase2C17I13M9 \
 --runUnscheduled \
